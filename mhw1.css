@@ -1,0 +1,256 @@
+/*VARIABILI COLORI, FONT*/ 
+:root {
+
+--primarycolor: black;
+--secondcolor: white;
+--thirdcolor: palevioletred;
+
+--fontheader: 'Caveat';
+--fontdefault: sans-serif;
+
+}
+
+a {
+    display: block;
+    border-radius: 10px;
+    background-color:var(--thirdcolor);
+    font-size: 1.2rem;
+    font-family: var(--fontheader),var(--fontdefault);
+    text-align: center;
+    padding:5px;
+    margin-left: 20px;
+    margin-right: 50px; 
+}
+
+a:visited{
+     color:var(--secondcolor);
+}
+
+a:link{
+    color:var(--thirdcolor);
+}
+
+body {
+    margin-top:749.8px;
+    margin-left:0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color:var(--primarycolor);
+}
+
+h1 {
+    text-align: right;
+    margin-top: 0px;
+}
+
+p{
+    text-align: center;
+    color:var(--thirdcolor);
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+strong{
+    display: block;
+    text-align: left;
+    color:var(--thirdcolor);
+    font-size: 1.5rem;
+    font-family: var(--fontheader), var(--fontdefault);
+}
+/*GESTIONE NAV*/
+
+#flex-container-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:var(--primarycolor);
+    width: 100vw;
+    height: 40px;  
+}
+/*FINE NAV*/
+
+#utente {
+
+    border-radius: 100%;
+    border: 5px solid var(--thirdcolor);
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+#overlay{
+
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height:500px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#divprofilo {
+
+    display: flex;
+    justify-content: center;
+    width:100vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    margin-bottom: 0;
+
+}
+
+#background{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 689.8px;
+    z-index: 2;
+}
+
+#specificheutente, #info {
+
+    text-align: center;
+    color: var(--secondcolor);
+    font-family:var(--fontheader), var(--fontdefault);
+}
+
+
+/* GESTIONE HEADER*/
+
+    /*fisso tutta la parte alta */
+
+#fixed{
+
+    position: fixed;
+    top:0;
+    z-index: 3;
+
+}
+
+#flex-container-hdr{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgheader.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+
+ }
+
+.flex-items-hdr{
+    background-color: transparent;
+    text-align: center;
+    color:var(--secondcolor); 
+    font-family:var(--fontheader), var(--fontdefault);
+    font-size: 4rem;
+
+}
+
+/*FINE HEADER*/
+
+/* GESTIONE SECTION */
+
+#flex-container-sct{
+
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 120px;
+    
+}
+
+
+.flex-items-sctnum{
+    top:0;
+    right:0;
+    left:0;
+    text-align:right;
+    margin-right: 40px;
+   
+}
+
+.flex-items-sctdescription{
+    
+    text-align: center;  
+    width: 66.67vw;
+
+}
+
+#imgsection {
+
+    margin-top: 20px;
+    width: 500px ;
+    height: 300px ;
+
+}
+
+/*FINE SECTION*/
+
+
+/*GESTIONE FOOTER*/
+
+#flex-container-ft{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+    background-color: var(--thirdcolor);
+
+} 
+
+@media(max-width: 780px){
+    #flex-container-hdr {
+        height:200px;
+
+    }
+    #background{
+        height:389.8px;
+    }
+
+    #imgsection{
+        width: 300px ;
+        height: 100px ;
+    }
+    .flex-items-hdr{
+        font-size: 2rem;
+    }
+
+    body{
+        margin-top:389.8px ;
+    }
+
+    #overlay{
+        height:200px;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    a {
+        border-radius: 5px;
+        font-size: 1rem;
+        padding:3px;
+        margin-left: 10px;
+        margin-right: 20px; 
+    }
+
+    #flex-container-sct{
+        margin-left: 0px;   
+    }
+
+    .flex-items-sctnum{
+        margin-right: 10px;     
+    }
+
+}
